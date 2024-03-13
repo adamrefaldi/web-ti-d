@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerNavbar {
+    position: absolute;
+}
+
+nav h1 {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbarLogo h1 {
+    color: black ;
+    column-gap: 0.5rem;
+}
+
+.navbarMenu a {
+    flex-direction: row;
+    column-gap: 6rem;
+}
+
+.navbarList {
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    font-size: medium;
+}
+
+.navbarItem a {
+    color:black;
+}
+
+.navbarItem a:hover {
+    color: blue;
+}
+
+.parallax {
+    display: flex;
+    background-image: url("../assets/img/gambar1.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 85%;
+}
+
+.containerParallax {
+    width: 100%;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerWelcome {
+    width: 100%;
+    /* padding-bottom: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
+}
+
+.welcome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.containerSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form {
+    width: 1000px;
+}
+
+.containerSearch img {
+    width: 20px;
+}
+
+.searchBar {
+    margin: 25px 30px;
+    background: rgba(255, 255, 255, 0.82);
+    border-radius: 60px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.searchBar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 7px 5px;
+    /* padding-right: 400px; */
+    font-size: 20px;
+    color: #000000;
+}
+
+.searchBar button img {
+    width: 25px;
+}
+
+.searchBar button {
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    background: #0040c9c7;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    color:#000000d6;
+}
