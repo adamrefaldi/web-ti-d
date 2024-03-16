@@ -135,7 +135,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .search form {
@@ -162,7 +162,6 @@ body {
   border: 0;
   outline: none;
   padding: 7px 5px;
-  /* padding-right: 400px; */
   font-size: 20px;
   color: #000000;
 }
@@ -186,21 +185,46 @@ body {
   color: #000000d6;
 }
 
+@media screen and (max-width: 1048px) {
+  .search form {
+    width: 700px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .search form {
-    width: 800px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .search form {
-    width: 600px;
+    width: 400px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .search form {
-    width: 400px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchBar button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchBar button img {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .searchBar input {
+    font-size: 15px;
   }
 }
 
