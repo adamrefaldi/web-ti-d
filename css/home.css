@@ -240,7 +240,7 @@ body.dark .search-field i{
   }
   .menu{
       position: fixed;
-      height: 100%;
+      height: 1000px;
       width: 320px;
       left: -100%;
       top: 0;
@@ -290,20 +290,20 @@ body.dark .search-field i{
 
 .containerParallax {
   width: 100%;
-  padding: 100px;
+  padding: 100px 100px 30px 100px;
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 800px) {
   .containerParallax {
-    padding: 80px;
+    padding: 80px 80px 10px 80px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .containerParallax {
-    padding: 60px;
+    padding:60px 60px 0 60px;
   }
 }
 
@@ -539,7 +539,7 @@ ul{
 }
 
 .copyright {
-  margin-top: 50px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,7 +555,7 @@ ul{
 
 .footerTiImage img {
   display: flex;
-  width: 10%;
+  width: 5%;
   margin: 1.5rem;
 }
 
@@ -564,7 +564,7 @@ ul{
 }
 
 .footerTiImage .imgPolnes {
-  width: 7.2%;
+  width: 3.7%;
 }
 
 
