@@ -6,24 +6,44 @@
     <title>Teknik Informatika 2D</title>
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
   </head>
   <body>
-    <!-- NAVIGATION BAR START -->
-    <nav class="containerNavbar" id="myTopnav">
-      <div class="navbarLogo">
-        <a href="home.html"><h1>Teknik Informatika - 2D</h1></a>
+    <nav class="navbar visible">
+      <div class="nav-bar">
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="#">TI-2D</a></span>
+          <div class="menu">
+              <div class="logo-toggle">
+                  <span class="logo"><a href="#">TI-2D</a></span>
+                  <i class='bx bx-x siderbarClose'></i>
+              </div>
+              <ul class="nav-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Peoples</a></li>
+                  <li><a href="#">Subjects</a></li>
+                  <li><a href="#">Gallery</a></li>
+              </ul>
+          </div>
+          <div class="darkLight-searchBox">
+              <div class="dark-light">
+                  <i class='bx bx-moon moon'></i>
+                  <i class='bx bx-sun sun'></i>
+              </div>
+              <div class="searchBox">
+                 <div class="searchToggle">
+                  <i class='bx bx-x cancel'></i>
+                  <i class='bx bx-search search'></i>
+                 </div>
+                  <div class="search-field">
+                      <input type="text" placeholder="Search...">
+                      <i class='bx bx-search'></i>
+                  </div>
+              </div>
+          </div>
       </div>
-      <div class="navbarMenu">
-        <ul class="navbarList">
-          <li class="navbarItem"><a href="home.html">Home</a></li>
-          <li class="navbarItem"><a href="people.html">Peoples</a></li>
-          <li class="navbarItem"><a href="subjects.html">Subjects</a></li>
-          <li class="navbarItem"><a href="gallery.html">Gallery</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- NAVIGATION BAR END -->
-
+  </nav>
     <!-- MAIN CONTENT START -->
     <main>
       <!-- Home Start -->
@@ -37,39 +57,13 @@
                 <h1>TEKNIK INFORMATIKA 2D</h1>
               </div>
             </div>
-            <div class="containerSearch">
-              <div class="search">
-                <form
-                  action="https://www.google.com/search"
-                  method="get"
-                  class="searchBar"
-                >
-                  <input type="text" placeholder="search" />
-                  <button type="submit">
-                    <img src="../assets/img/search.png" alt="" />
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
-        </div>
-        <!-- PARALLAX END -->
-        <div class="wave">
-          <!-- WAVE -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-              fill="#2e2e2e"
-              fill-opacity="1"
-              d="M0,128L60,144C120,160,240,192,360,192C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            ></path>
-          </svg>
-          <!-- WAVE END -->
         </div>
       </div>
       <div class="newsContainer">
         <div class="newsContent news">
           <div class="title">
-            <h2>Info Beasiswa</h2>
+            <h2>Tugas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div class="cards">
@@ -144,40 +138,10 @@
       <div class="container">
         <div class="row">
           <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
+            <h4>social media</h4>
             <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
@@ -201,5 +165,6 @@
       </div>
    </footer>
    <!-- FOOTER END -->
+   <script src="../js/navbar.js"></script>
   </body>
 </html>
