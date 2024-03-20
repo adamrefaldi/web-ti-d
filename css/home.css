@@ -10,7 +10,7 @@
 }
 
 :root{
-  --body-color: #E4E9F7;
+  --body-color: #fff;
   --nav-color: #4070F4;
   --side-nav: #010718;
   --text-color: #FFF;
@@ -483,7 +483,7 @@ ul{
 	background-color: #e91e63;
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 150px;
 }
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
@@ -561,6 +561,10 @@ ul{
 
 .footerTiImage .imgTi {
   height: 100%;
+}
+
+.footerTiImage .imgAr {
+  border-radius: 50%;
 }
 
 .footerTiImage .imgPolnes {
