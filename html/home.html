@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teknik Informatika 2D</title>
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/gallery.css">
+    <!-- <link rel="stylesheet" href="../css/gallery.css"> -->
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/fancybox.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -147,7 +147,7 @@
       <!-- Subjects End -->
 
       <!-- Gallery Start -->
-      <h1 id="idGallery" class="title" data-aos="fade-down">WELCOME TO 2D GALLERY</h1>
+      <h1 id="idGallery" class="title" data-aos="fade-down">Gallery</h1>
       <div class="item-links">
         <span class="item-link menu-active" data-name="all">All</span>
         <span class="item-link" data-name="panorama">Bakar</span>
@@ -834,5 +834,47 @@
    <script src="../js/fancybox.umd.js"></script>
    <script src="../js/index.umd.js"></script>
    <script src="../js/mixitup.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [
+              "zoomIn",
+              "zoomOut",
+              "toggle1to1",
+              "rotateCCW",
+              "rotateCW",
+              "flipX",
+              "flipY",
+            ],
+            right: ["slideshow", "thumbs", "close"],
+          },
+        },
+      });
+    </script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [
+              "zoomIN",
+              "zoomOut",
+              "toggle1to1",
+              "rotateCCW",
+              "rotateCW",
+              "flipX",
+              "flipY",
+            ],
+            right: ["slideshow", "thumbs", "close"],
+          },
+        },
+      });
+    </script>
   </body>
 </html>
