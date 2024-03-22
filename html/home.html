@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teknik Informatika 2D</title>
     <link rel="stylesheet" href="../css/home.css" />
-    <!-- <link rel="stylesheet" href="../css/gallery.css"> -->
     <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/fancybox.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -14,12 +13,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <nav class="navbar visible">
       <div class="nav-bar">
-          <i class='bx bx-menu sidebarOpen' ></i>
+          <i class='bx bx-menu sidebarOpen'></i>
           <span class="logo navLogo"><a href="#">TI-2D</a></span>
           <div class="menu">
               <div class="logo-toggle">
@@ -29,7 +30,8 @@
               <ul class="nav-links">
                   <li><a href="home.html">Home</a></li>
                   <li><a href="people.html">Peoples</a></li>
-                  <li><a href="#Jobs">Subjects</a></li>
+                  <li><a href="#jobs">Jobs</a></li>
+                  <li><a href="#Subjects">Subjects</a></li>
                   <li><a href="#idGallery">Gallery</a></li>
               </ul>
           </div>
@@ -39,20 +41,21 @@
                   <i class='bx bx-sun sun'></i>
               </div>
               <div class="searchBox">
-                 <div class="searchToggle">
-                  <i class='bx bx-x cancel'></i>
-                  <i class='bx bx-search search'></i>
-                 </div>
+                  <div class="searchToggle">
+                      <i class='bx bx-x cancel'></i>
+                      <i class='bx bx-search search'></i>
+                  </div>
                   <div class="search-field">
-                      <input type="text" placeholder="Search...">
+                      <input id="searchInput" type="text" placeholder="Search...">
                       <i class='bx bx-search'></i>
+                      <ul id="searchResults"></ul>
                   </div>
               </div>
           </div>
       </div>
   </nav>
     <!-- MAIN CONTENT START -->
-    <main>
+    <main id="content">
       <!-- Home Start -->
       <div>
         <div class="parallax">
@@ -66,14 +69,74 @@
           </div>
         </div>
       </div>
-      <div class="newsContainer">
-        <div class="newsContent news">
-          <div class="title">
+      <div id="jobs" class="newsContainer">
+        <div class="title">
+            <hr>
             <h2>Jobs</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
-          <div class="cards">
-            <div class="card">
+          <div class="slide-container">
+            <div class="slide-content swiper">
+              <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+
+            </div>
+            
+            <!-- <div class="card swiper-slide">
               <div class="imageSection">
                 <img src="../assets/img/gambar2.png" alt="" />
               </div>
@@ -93,7 +156,7 @@
                 <p>Posted on Mar 14 2024</p>
               </div>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
               <div class="imageSection">
                 <img src="../assets/img/gambar2.png" alt="" />
               </div>
@@ -112,27 +175,7 @@
               <div class="postedDate">
                 <p>Posted on Mar 14 2024</p>
               </div>
-            </div>
-            <div class="card">
-              <div class="imageSection">
-                <img src="../assets/img/gambar2.png" alt="" />
-              </div>
-              <div class="article">
-                <h4>Title one</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  quisquam pariatur porro. Quaerat maiores cupiditate ipsum
-                  error consectetur excepturi similique illum nihil quisquam,
-                  ducimus ea praesentium officiis, laudantium veniam possimus.
-                </p>
-              </div>
-              <div class="blogView">
-                <a href="" class="button">Read More</a>
-              </div>
-              <div class="postedDate">
-                <p>Posted on Mar 14 2024</p>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -147,7 +190,11 @@
       <!-- Subjects End -->
 
       <!-- Gallery Start -->
-      <h1 id="idGallery" class="title" data-aos="fade-down">Gallery</h1>
+      <div class="title">
+        <hr>
+        <h1 id="idGallery" class="title" data-aos="fade-down">Gallery</h1>
+        <hr>
+      </div>
       <div class="item-links">
         <span class="item-link menu-active" data-name="all">All</span>
         <span class="item-link" data-name="panorama">Bakar</span>
@@ -817,7 +864,7 @@
             src="../assets/img/ti.png"
             alt="Logo Teknologi Informasi"
           />
-          <img class="imgAr" src="../assets/img/AR.jpg" alt="Logo AR Community">
+          <img class="imgAr" src="../assets/img/AR.png" alt="Logo AR Community">
           <img
             class="imgPolnes"
             src="../assets/img/polnes.png"
@@ -876,5 +923,9 @@
         },
       });
     </script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/swipe.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>
