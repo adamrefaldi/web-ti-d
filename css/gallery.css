@@ -13,7 +13,9 @@ body {
 .title {
   text-align: center;
   padding: 1.3rem;
-  font: 2.5rem;
+  /* font: 2.5rem; */
+  font: 40px;
+  text-transform: uppercase;
   color: #fff;
   animation: color 4s linear infinite;
   -webkit-animation: color 4s linear infinite;
@@ -85,15 +87,21 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 950px) {
   .grid {
-    width: calc(100% - 40px);
+    width: calc(100% - 300px);
     columns: 3;
+  }
+  .title h1 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) {
   .grid {
     columns: 2;
+  }
+  .title h1 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -160,7 +168,6 @@ body {
   80% {
     color: #ed5565;
   }
-
   100% {
     color: #ac92ec;
   }
