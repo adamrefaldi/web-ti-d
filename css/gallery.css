@@ -13,7 +13,9 @@ body {
 .title {
   text-align: center;
   padding: 1.3rem;
-  font: 2.5rem;
+  /* font: 2.5rem; */
+  font: 40px;
+  text-transform: uppercase;
   color: #fff;
   animation: color 4s linear infinite;
   -webkit-animation: color 4s linear infinite;
@@ -91,91 +93,26 @@ body {
     columns: 3;
   }
 }
+@media screen and (max-width: 950px) {
+  .grid {
+    width: calc(100% - 300px);
+    columns: 3;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .grid {
     columns: 2;
   }
+  .title h1 {
+    font-size: 15px;
+  }
 }
+
 @media screen and (max-width: 480px) {
   .grid {
     columns: 1;
   }
-}
-
-@keyframes color {
-  0% {
-    color: #a0d648;
-  }
-  20% {
-    color: #4fc1e9;
-  }
-  40% {
-    color: #ffce54;
-  }
-  60% {
-    color: #fc6e51;
-  }
-  80% {
-    color: #ed5565;
-  }
-  100% {
-    color: #ac92ec;
-  }
-}
-
-@-moz-keyframes color {
-  0% {
-    color: #a0d468;
-  }
-  20% {
-    color: #4fc1e9;
-  }
-  40% {
-    color: #ffce54;
-  }
-  60% {
-    color: #fc6e51;
-  }
-  80% {
-    color: #ed5565;
-  }
-  100% {
-    color: #ac92ec;
-  }
-}
-
-@-webkit-keyframes  color {
-  0% {
-    color: #a0d468;
-  }
-  20% {
-    color: #4fc1e9;
-  }
-  40% {
-    color: #ffce54;
-  }
-  60% {
-    color: #fc6e51;
-  }
-  80% {
-    color: #ed5565;
-  }
-
-  100% {
-    color: #ac92ec;
-  }
-}
-
-::-webkit-scrollbar {
-  width: 0.6rem;
-  border-radius: 0.5rem;
-  background-color: #b4acac;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #c7c2c2;
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #d4cccc;
 }
