@@ -6,79 +6,136 @@
     <title>Teknik Informatika 2D</title>
     <link rel="icon" type="image/x-icon" href="../assets/img/tid.jpg">
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/aos.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <nav class="navbar visible">
       <div class="nav-bar">
-        <i class="bx bx-menu sidebarOpen"></i>
-        <span class="logo navLogo"><a href="home.html">TI-2D</a></span>
-        <div class="menu">
-          <div class="logo-toggle">
-            <span class="logo"><a href="#">TI-2D</a></span>
-            <i class="bx bx-x siderbarClose"></i>
+          <i class='bx bx-menu sidebarOpen'></i>
+          <span class="logo navLogo"><a href="#">TI-2D</a></span>
+          <div class="menu">
+              <div class="logo-toggle">
+                  <span class="logo"><a href="#">TI-2D</a></span>
+                  <i class='bx bx-x siderbarClose'></i>
+              </div>
+              <ul class="nav-links">
+              <li><a href="#content">Home</a></li>
+              <li><a href="#idPeoples">Peoples</a></li>
+              <li><a href="#jobs">Jobs</a></li>
+              <li><a href="#idSubjects">Subjects</a></li>
+              <li><a href="#idGallery">Gallery</a></li>
+            </ul>
           </div>
-          <ul class="nav-links">
-            <li><a href="#content">Home</a></li>
-            <li><a href="#idPeoples">Peoples</a></li>
-            <li><a href="#jobs">Jobs</a></li>
-            <li><a href="#idSubjects">Subjects</a></li>
-            <li><a href="#idGallery">Gallery</a></li>
-          </ul>
-        </div>
-        <div class="darkLight-searchBox">
-          <div class="dark-light">
-            <i class="bx bx-moon moon"></i>
-            <i class="bx bx-sun sun"></i>
+          <div class="darkLight-searchBox">
+              <div class="dark-light">
+                  <i class='bx bx-moon moon'></i>
+                  <i class='bx bx-sun sun'></i>
+              </div>
+              <div class="searchBox">
+                  <div class="searchToggle">
+                      <i class='bx bx-x cancel'></i>
+                      <i class='bx bx-search search'></i>
+                  </div>
+                  <div class="search-field">
+                      <input id="searchInput" type="text" placeholder="Search...">
+                      <i class='bx bx-search'></i>
+                      <ul id="searchResults"></ul>
+                  </div>
+              </div>
           </div>
-          <div class="searchBox">
-            <div class="searchToggle">
-              <i class="bx bx-x cancel"></i>
-              <i class="bx bx-search search"></i>
-            </div>
-            <div class="search-field">
-              <input id="searchInput" type="text" placeholder="Search..." />
-              <i class="bx bx-search"></i>
-              <ul id="searchResults"></ul>
-            </div>
-          </div>
-        </div>
       </div>
-    </nav>
+  </nav>
     <!-- MAIN CONTENT START -->
-    <!-- Home Start -->
-    <div id="content">
-      <div class="parallax">
-        <div class="containerParallax">
-          <div class="containerWelcome">
-            <div class="welcome">
-              <h1 data-aos="zoom-out-down" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">WELCOME TO</h1>
-              <h1 data-aos="zoom-out-up" data-aos-offset="300"
-              data-aos-easing="ease-in-sine">TEKNIK INFORMATIKA 2D</h1>
+    <main id="content">
+      <!-- Home Start -->
+      <div>
+        <div class="parallax">
+          <div class="containerParallax">
+            <div class="containerWelcome">
+              <div class="welcome">
+                <h1>WELCOME TO</h1>
+                <h1>TEKNIK INFORMATIKA 2D</h1>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div id="jobs" class="newsContainer">
+        <div class="title">
+            <hr>
+            <h2>Jobs</h2>
+            <hr>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="slide-container">
+            <div class="slide-content swiper">
+              <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+                <div class="card swiper-slide">
+                  <div class="imageSection">
+                    <img src="../assets/img/gambar2.png" alt="" />
+                  </div>
+                  <div class="article">
+                    <h4>Title one</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                  </div>
+                  <div class="blogView">
+                    <a href="">View More</a>
+                  </div>
+                  <div class="postedDate">
+                    <p>Posted on Mar 14 2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       <!-- Home End -->
 
       <!-- Peoples Start -->
@@ -201,369 +258,651 @@
       <!-- Subjects End -->
 
       <!-- Gallery Start -->
-      <!-- ini ga di pake atau  opsional -->
-      <!-- <div class="item-links">
+      <div class="title">
+        <hr>
+        <h1 id="idGallery" class="title" data-aos="fade-down">Gallery</h1>
+        <hr>
+      </div>
+      <div class="item-links">
         <span class="item-link menu-active" data-name="all">All</span>
-        <span class="item-link" data-name="boy">Boy</span>
-        <span class="item-link" data-name="girl">Girl</span>
-        <span class="item-link" data-name="random">Random</span>
-        <span class="item-link" data-name="bakar">bakar-bakar</span>
+        <span class="item-link" data-name="panorama">Bakar</span>
+        <span class="item-link" data-name="coding">Acara</span>
+        <span class="item-link" data-name="car">Nongki</span>
+        <span class="item-link" data-name="cyberpunk">Random</span>
         <span class="item-link" data-name="islamic">Event</span>
-      </div> -->
-      <div id="idGallery" class="title">
-        <hr />
-        <h2 data-aos="fade-down">Gallery</h2>
-        <hr />
+      </div>
       <div class="grid">
-        <div class="grid-item" data-aos="fade-left" data-name="bakar">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/bakar 1.jpg"
+            href="https://source.unsplash.com/9D1UzBBkZw4"
             data-fancybox="gallery"
-            data-caption="Acara bakar-bakar pertama di rumah ade"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/bakar 1.jpg" alt="" />
+            <img src="https://source.unsplash.com/9D1UzBBkZw4" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="boy">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/kelas 3.jpg"
+            href="https://source.unsplash.com/4hbJ-eymZ1o"
             data-fancybox="gallery"
-            data-caption="Wahab & friends"
+            data-caption="Coding"
           >
-            <img src="../assets/img/kelas 3.jpg" alt="" />
+            <img src="https://source.unsplash.com/4hbJ-eymZ1o" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="class">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/kelas 1.jpg"
+            href="https://source.unsplash.com/X16zXcbxU4U"
             data-fancybox="gallery"
-            data-caption="First day"
+            data-caption="Car"
           >
-            <img src="../assets/img/kelas 1.jpg" alt="" />
+            <img src="https://source.unsplash.com/X16zXcbxU4U" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="girl">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/girl 1.jpg"
+            href="https://source.unsplash.com/psdV2Rl-GvU"
             data-fancybox="gallery"
-            data-caption="Pretty & friends"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/girl 1.jpg" alt="" />
+            <img src="https://source.unsplash.com/psdV2Rl-GvU" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="girl">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/girl 4.jpg"
+            href="https://source.unsplash.com/ZcBY_mxVBCE"
             data-fancybox="gallery"
-            data-caption="Mirror Selfie"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/girl 4.jpg" alt="" />
+            <img src="https://source.unsplash.com/ZcBY_mxVBCE" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="boy">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/kelas 5.jpg"
+            href="https://source.unsplash.com/XxQxQok5plI"
             data-fancybox="gallery"
-            data-caption="Liburan"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/kelas 5.jpg" alt="" />
+            <img src="https://source.unsplash.com/XxQxQok5plI" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="boy">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/kelas 4.jpg"
+            href="https://source.unsplash.com/OqtafYT5kTw"
             data-fancybox="gallery"
-            data-caption="Nyore"
+            data-caption="Coding"
           >
-            <img src="../assets/img/kelas 4.jpg" alt="" />
+            <img src="https://source.unsplash.com/OqtafYT5kTw" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="class">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/class 1.jpg"
+            href="https://source.unsplash.com/N9Pf2J656aQ"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Car"
           >
-            <img src="../assets/img/class 1.jpg" alt="" />
+            <img src="https://source.unsplash.com/N9Pf2J656aQ" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="girl">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/girl 5.jpg"
+            href="https://source.unsplash.com/kL3u4Tqfn1s"
             data-fancybox="gallery"
-            data-caption="Mirror Selfie pt2"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/girl 5.jpg" alt="" />
+            <img src="https://source.unsplash.com/kL3u4Tqfn1s" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="class">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/class 3.jpg"
+            href="https://source.unsplash.com/7blIFp0kFP4"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/class 3.jpg" alt="" />
+            <img src="https://source.unsplash.com/7blIFp0kFP4" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="class">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/class 2.jpg"
+            href="https://source.unsplash.com/pKhJ4fPSb_c"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/class 2.jpg" alt="" />
+            <img src="https://source.unsplash.com/pKhJ4fPSb_c" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="girl">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/kelas 2.jpg"
+            href="https://source.unsplash.com/koOdUvfGr4c"
             data-fancybox="gallery"
-            data-caption="Kang parkir TI"
+            data-caption="Coding"
           >
-            <img src="../assets/img/kelas 2.jpg" alt="" />
+            <img src="https://source.unsplash.com/koOdUvfGr4c" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="boy">
+        <div class="grid-item" dataa-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/kelas 11.jpg"
+            href="https://source.unsplash.com/_4sWbzH5fp8"
             data-fancybox="gallery"
-            data-caption="Nyore"
+            data-caption="Car"
           >
-            <img src="../assets/img/kelas 11.jpg" alt="" />
+            <img src="https://source.unsplash.com/_4sWbzH5fp8" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="boy">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/kelas 9.jpg"
+            href="https://source.unsplash.com/cars-on-road-between-high-rise-buildings-during-night-time-yVUQlyRlJSw"
             data-fancybox="gallery"
-            data-caption="Hari jadian ariak & ade"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/kelas 9.jpg" alt="" />
+            <img
+              src="https://source.unsplash.com/cars-on-road-between-high-rise-buildings-during-night-time-yVUQlyRlJSw"
+              alt=""
+            />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="boy">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/kelas 10.jpg"
+            href="https://source.unsplash.com/kNSREmtaGOE"
             data-fancybox="gallery"
-            data-caption="Sholat berjamaah"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/kelas 10.jpg" alt="" />
+            <img src="https://source.unsplash.com/kNSREmtaGOE" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="class">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/class 5.jpg"
+            href="https://source.unsplash.com/kxqAfOjZTys"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/class 5.jpg" alt="" />
+            <img src="https://source.unsplash.com/kxqAfOjZTys" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="random">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/kelas 7.jpg"
+            href="https://source.unsplash.com/lYFERR5dTG4"
             data-fancybox="gallery"
-            data-caption="Muhgni & wahab"
+            data-caption="Coding"
           >
-            <img src="../assets/img/kelas 7.jpg" alt="" />
+            <img src="https://source.unsplash.com/lYFERR5dTG4" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="random">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/kelas 12.jpg"
+            href="https://source.unsplash.com/zu95jkyrGtw"
             data-fancybox="gallery"
-            data-caption="Zidan galau"
+            data-caption="Car"
           >
-            <img src="../assets/img/kelas 12.jpg" alt="" />
+            <img src="https://source.unsplash.com/zu95jkyrGtw" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="random">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/kelas 6.jpg"
+            href="https://source.unsplash.com/ihUVzI4f5To"
             data-fancybox="gallery"
-            data-caption="Ngebakso"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/kelas 6.jpg" alt="" />
+            <img src="https://source.unsplash.com/ihUVzI4f5To" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="class">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/class 2.jpg"
+            href="https://source.unsplash.com/8BcNsqDJy2I"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/class 2.jpg" alt="" />
+            <img src="https://source.unsplash.com/8BcNsqDJy2I" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="random">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/random 13.jpg"
+            href="https://source.unsplash.com/BurTAJlbsRo"
             data-fancybox="gallery"
-            data-caption="Sholat berjamaah"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/random 13.jpg" alt="" />
+            <img src="https://source.unsplash.com/BurTAJlbsRo" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="random">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/random 14.jpg"
+            href="https://source.unsplash.com/SyvsTmuuZyM"
             data-fancybox="gallery"
-            data-caption="Dimas pusing"
+            data-caption="Coding"
           >
-            <img src="../assets/img/random 14.jpg" alt="" />
+            <img src="https://source.unsplash.com/SyvsTmuuZyM" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="class">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/random 17.jpg"
+            href="https://source.unsplash.com/GJuXN4uyB2U"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Car"
           >
-            <img src="../assets/img/random 17.jpg" alt="" />
+            <img src="https://source.unsplash.com/GJuXN4uyB2U" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="random">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/random 10.jpg"
+            href="https://source.unsplash.com/oqYLdbuJDQU"
             data-fancybox="gallery"
-            data-caption="Ga tau ngepain itu dia"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/random 10.jpg" alt="" />
+            <img src="https://source.unsplash.com/oqYLdbuJDQU" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="random">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/random 8.jpg"
+            href="https://source.unsplash.com/2lMK4dgqwFM"
             data-fancybox="gallery"
-            data-caption="Inpo stand ramee lurr"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/random 8.jpg" alt="" />
+            <img src="https://source.unsplash.com/2lMK4dgqwFM" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="bakar">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/random 12.jpg"
+            href="https://source.unsplash.com/dT4_wbYCJiY"
             data-fancybox="gallery"
-            data-caption="Chef nya TI-D"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/random 12.jpg" alt="" />
+            <img src="https://source.unsplash.com/dT4_wbYCJiY" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="bakar">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/random 18.jpg"
+            href="https://source.unsplash.com/dYEuFB8KQJk"
             data-fancybox="gallery"
-            data-caption="bakar-bakar"
+            data-caption="Coding"
           >
-            <img src="../assets/img/random 18.jpg" alt="" />
+            <img src="https://source.unsplash.com/dYEuFB8KQJk" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="boy">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/random 11.jpg"
+            href="https://source.unsplash.com/P5coC_C8XNo"
             data-fancybox="gallery"
-            data-caption="Bang AL"
+            data-caption="Car"
           >
-            <img src="../assets/img/random 11.jpg" alt="" />
+            <img src="https://source.unsplash.com/P5coC_C8XNo" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="class">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/random 4.jpg"
+            href="https://source.unsplash.com/LJKIRjERTCg"
             data-fancybox="gallery"
-            data-caption="bakar-bakar"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/random 4.jpg" alt="" />
+            <img src="https://source.unsplash.com/LJKIRjERTCg" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="random">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/random 21.jpg"
+            href="https://source.unsplash.com/kOZZukBNe54"
             data-fancybox="gallery"
-            data-caption="Libura ke sambutan"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/random 21.jpg" alt="" />
+            <img src="https://source.unsplash.com/kOZZukBNe54" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="random">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/random 15.jpg"
+            href="https://source.unsplash.com/_TL2XdEPmqg"
             data-fancybox="gallery"
-            data-caption="Makan bang"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/random 15.jpg" alt="" />
+            <img src="https://source.unsplash.com/_TL2XdEPmqg" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="random">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/random 20.jpg"
+            href="https://source.unsplash.com/_Fx34KeqIEw"
             data-fancybox="gallery"
-            data-caption="Belajar bersama dosen Wahab"
+            data-caption="Coding"
           >
-            <img src="../assets/img/random 20.jpg" alt="" />
+            <img src="https://source.unsplash.com/_Fx34KeqIEw" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="class">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/random 22.jpg"
+            href="https://source.unsplash.com/Y88Z4KnGwZg"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Car"
           >
-            <img src="../assets/img/random 22.jpg" alt="" />
+            <img src="https://source.unsplash.com/Y88Z4KnGwZg" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="class">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/random 3.jpg"
+            href="https://source.unsplash.com/8FdEwlxP3oU"
             data-fancybox="gallery"
-            data-caption="bakar-bakar"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/random 3.jpg" alt="" />
+            <img src="https://source.unsplash.com/8FdEwlxP3oU" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-up" data-name="random">
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
           <a
-            href="../assets/img/random 2.jpg"
+            href="https://source.unsplash.com/KfpTd2B5vV4"
             data-fancybox="gallery"
-            data-caption="Kylian Aldi"
+            data-caption="Islamic"
           >
-            <img src="../assets/img/random 2.jpg" alt="" />
+            <img src="https://source.unsplash.com/KfpTd2B5vV4" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-left" data-name="boy">
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
           <a
-            href="../assets/img/random 23.jpg"
+            href="https://source.unsplash.com/H_5JQek9dMk"
             data-fancybox="gallery"
-            data-caption="Inpoo Balap"
+            data-caption="Panorama"
           >
-            <img src="../assets/img/random 23.jpg" alt="" />
+            <img src="https://source.unsplash.com/H_5JQek9dMk" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="fade-right" data-name="class">
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
           <a
-            href="../assets/img/class 4.jpg"
+            href="https://source.unsplash.com/cOkpTiJMGzA"
             data-fancybox="gallery"
-            data-caption="Belajar"
+            data-caption="Coding"
           >
-            <img src="../assets/img/class 4.jpg" alt="" />
+            <img src="https://source.unsplash.com/cOkpTiJMGzA" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-left" data-name="random">
+        <div class="grid-item" data-aos="flip-left" data-name="car">
           <a
-            href="../assets/img/random 24.jpg"
+            href="https://source.unsplash.com/N7RiDzfF2iw"
             data-fancybox="gallery"
-            data-caption="Nugas Bareng dosen wahab"
+            data-caption="Car"
           >
-            <img src="../assets/img/random 24.jpg" alt="" />
+            <img src="https://source.unsplash.com/N7RiDzfF2iw" alt="" />
           </a>
         </div>
-        <div class="grid-item" data-aos="flip-right" data-name="boy">
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
           <a
-            href="../assets/img/random 9.jpg"
+            href="https://source.unsplash.com/vSRgXtQuns8"
             data-fancybox="gallery"
-            data-caption="Akhirnya dapat customer"
+            data-caption="Cyberpunk"
           >
-            <img src="../assets/img/random 9.jpg" alt="" />
+            <img src="https://source.unsplash.com/vSRgXtQuns8" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/lKbz2ejxYbA"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/lKbz2ejxYbA" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/b49d7cjU4iY"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/b49d7cjU4iY" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/8qEB0fTe9Vw"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/8qEB0fTe9Vw" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/GRV4ypBKgxE"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/GRV4ypBKgxE" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/PBFtL7_RFJk"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/PBFtL7_RFJk" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/Qec3HPaHWTI"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/Qec3HPaHWTI" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/G7DM4OqIhfQ"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/G7DM4OqIhfQ" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/bs2Ba7t69mM"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/bs2Ba7t69mM" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/6lSBynPRaAQ"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/6lSBynPRaAQ" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/KQ75n3P8EJA"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/KQ75n3P8EJA" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/1vriQZ8y9X8"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/1vriQZ8y9X8" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/XIIEfDUGny4"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/XIIEfDUGny4" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/LKsHwgzyk7c"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/LKsHwgzyk7c" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/_o_TfiZFrMU"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/_o_TfiZFrMU" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/skAzasWvAMU"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/skAzasWvAMU" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/Z_8Uf8bC9cs"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/Z_8Uf8bC9cs" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/lj7I7S7cl30"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/lj7I7S7cl30" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/QQ9LainS6tI"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/QQ9LainS6tI" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/DMf02WuSQkA"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/DMf02WuSQkA" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/rHvBQyfLPjk"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/rHvBQyfLPjk" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/IEcqd914qpw"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/IEcqd914qpw" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/hAjTPjD-WKs"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/hAjTPjD-WKs" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/ZS67i1HLllo"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/ZS67i1HLllo" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/140cHe0oS58"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/140cHe0oS58" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/Tl2-3k0ljuU"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/Tl2-3k0ljuU" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/hJXiPheKFus"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/hJXiPheKFus" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-left" data-name="panorama">
+          <a
+            href="https://source.unsplash.com/fAgENqQd1a0"
+            data-fancybox="gallery"
+            data-caption="Panorama"
+          >
+            <img src="https://source.unsplash.com/fAgENqQd1a0" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-right" data-name="coding">
+          <a
+            href="https://source.unsplash.com/oZ61KFUQsus"
+            data-fancybox="gallery"
+            data-caption="Coding"
+          >
+            <img src="https://source.unsplash.com/oZ61KFUQsus" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-left" data-name="car">
+          <a
+            href="https://source.unsplash.com/K0VlsK7C_l8"
+            data-fancybox="gallery"
+            data-caption="Car"
+          >
+            <img src="https://source.unsplash.com/K0VlsK7C_l8" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="flip-right" data-name="cyberpunk">
+          <a
+            href="https://source.unsplash.com/Ys-DBJeX0nE"
+            data-fancybox="gallery"
+            data-caption="Cyberpunk"
+          >
+            <img src="https://source.unsplash.com/Ys-DBJeX0nE" alt="" />
+          </a>
+        </div>
+        <div class="grid-item" data-aos="fade-up" data-name="islamic">
+          <a
+            href="https://source.unsplash.com/ITxKCcbj7zc"
+            data-fancybox="gallery"
+            data-caption="Islamic"
+          >
+            <img src="https://source.unsplash.com/ITxKCcbj7zc" alt="" />
           </a>
         </div>
       </div>
@@ -573,23 +912,19 @@
     <!-- FOOTER START -->
     <footer class="footer">
       <div class="container">
-        <div class="rowFooter">
+        <div class="row">
           <div class="footer-col">
             <h4>social media</h4>
             <div class="social-links">
-              <a href="https://discord.gg/8AeVJ9fakT" target="_blank"
-                ><i class="fab fa-discord"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/tid.exee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                ><i class="fab fa-instagram"></i
-              ></a>
+              <a href="https://discord.gg/8AeVJ9fakT" target="_blank"><i class="fab fa-discord"></i></a>
+              <a href="https://www.instagram.com/tid.exee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
         <div class="copyright">
-          <p>&copy;2024 AR Community. All right reserved.</p>
+          <p>
+            &copy;2024 AR Community. All right reserved.
+          </p>
         </div>
         <div class="footerTiImage">
           <img
@@ -597,11 +932,7 @@
             src="../assets/img/ti.png"
             alt="Logo Teknologi Informasi"
           />
-          <img
-            class="imgAr"
-            src="../assets/img/AR.png"
-            alt="Logo AR Community"
-          />
+          <img class="imgAr" src="../assets/img/AR.png" alt="Logo AR Community">
           <img
             class="imgPolnes"
             src="../assets/img/polnes.png"
@@ -609,16 +940,16 @@
           />
         </div>
       </div>
-    </footer>
-    <!-- FOOTER END -->
-    <script src="../js/navbar.js"></script>
-    <script src="../js/gallery.js"></script>
-    <script src="../js/galleryMain.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/fancybox.umd.js"></script>
-    <script src="../js/index.umd.js"></script>
-    <script src="../js/mixitup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   </footer>
+   <!-- FOOTER END -->
+   <script src="../js/navbar.js"></script>
+   <script src="../js/gallery.js"></script>
+   <script src="../js/galleryMain.js"></script>
+   <script src="../js/aos.js"></script>
+   <script src="../js/fancybox.umd.js"></script>
+   <script src="../js/index.umd.js"></script>
+   <script src="../js/mixitup.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="../js/aos.umd.js"></script>
     <script src="../js/fancybox.js"></script>
     <script src="../js/swiper-bundle.min.js"></script>
