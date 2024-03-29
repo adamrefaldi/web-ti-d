@@ -38,7 +38,6 @@ let lastScrollTop = 0;
 window.addEventListener(
   "scroll",
   () => {
-    console.log("scroll");
     var { scrollY } = window;
     if (scrollY > lastScrollTop) {
       navbar.classList.remove("visible");
