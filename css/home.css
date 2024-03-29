@@ -440,6 +440,10 @@ body.dark .search-field i {
   align-items: center;
 }
 
+.peopleCarousel.no-transition {
+  scroll-behavior: auto;
+}
+
 .peopleCarousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
