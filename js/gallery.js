@@ -1,4 +1,4 @@
-ScrollReveal().reveal(".img-list", {
+scrollReveal().reveal(".imgList", {
   delay: 100,
   easing: "ease-out",
   interval: 500,
