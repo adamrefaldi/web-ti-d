@@ -1236,7 +1236,7 @@ hr {
 /* Gallery */
 .titleGallery {
   text-align: center;
-  font: 40px;
+  font-size: 40px;
   text-transform: uppercase;
   color: var(--color-body);
 }
